@@ -21,21 +21,12 @@ body {
 }
 
 main {
-    padding: 50px auto;
-}
-
-.media-parent {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    padding: 20px;
-    min-width: 400px;
-    max-width: 1100px;
+    padding: 20px 10px;
 }
 
 .media-child {
     padding: 10px 20px;
-    margin: 10px auto;
+    margin: 10px 40px;
     justify-content: center;
     background-color: rgb(68, 68, 68);
     border-radius: 5px;
@@ -43,13 +34,43 @@ main {
 
 .main-parent {
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 20px;
+    min-width: 300px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+@media (max-width: 993px) {
+    .out-parent {
+        display: flex;
+    }
+}
+
+@media (max-width: 550px) {
+    .output3 {
+        width: 300px !important;
+        height: 300px !important;
+    }
+    .letter-chart {
+        display: none;
+    }
+}
+
+.letter-container {
+    margin: 0 20px;
 }
 
 .output-header {
     margin: 10px 0;
+}
+
+.letter-chart {
+    height: 250px;
+    width: auto;
 }
 
 #output {
