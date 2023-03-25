@@ -18,6 +18,7 @@ html {
 body {
     background-color: rgb(30, 30, 30);
     color: white;
+    margin-bottom: 50px;
 }
 
 main {
@@ -111,4 +112,14 @@ main {
     justify-content: center;
     margin: auto;
     max-width: 750px;
+}
+
+.repo-link {
+    margin: auto;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.link {
+    color:rgb(204, 116, 219);
 }
