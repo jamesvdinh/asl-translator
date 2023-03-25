@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  Web-Designed by James Dinh ᓚᘏᗢ from scratch using HTML, CSS, and JS
+  For more info, contact jamesdinh77 (at) protonmail (dot) com
+
+  Copyright Disclaimer: This Source Code is Copyright (c) 2023 James Dinh All Rights Reserved.
+-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ASL Recognition using TF and MP</title>
+
+  <link href="css/general.css" rel="stylesheet" type="text/css" media="all">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.1/control_utils.css" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.1/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.1/control_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils@0.2/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.10.0/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.1/hands.js" crossorigin="anonymous"></script>
+  <script defer type="text/javascript" src="js/general.js"></script>
+</head>
+<body onload="doStyleTransfer()">
+  <main>
+    <div class="main-parent">
+      <div class="media-parent">
+        <!-- WEBCAM INPUT -->
+        <div class="media-child input-container">
+          <article class="panel is-info">
+            <h2 class="panel-heading">
+              Webcam Input
+            </h2>
+            <div class="panel-block">
+              <video class="input_video3"></video>
+            </div>
+          </article>
+        </div>
+        <!-- MEDIAPIPE OUTPUT -->
+        <div class="media-child output-container">
+          <article class="panel is-info">
+            <h2 class="panel-heading">
+              Mediapipe Hands Detection
+            </h2>
+            <div class="panel-block">
+              <canvas class="output3" width="480px" height="480px"></canvas>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="out-parent">
+        <h1 class="output-header">Output</h1>
+        <h2 id="output">NULL</h2></div>
+    </div>
+    <div class="control3">
+  </main>
+</body>
+</html>
