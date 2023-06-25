@@ -123,3 +123,4 @@ new ControlPanel(controlsElement3, {
       video3.classList.toggle('selfie', options.selfieMode);
       hands.setOptions(options);
     });
+    // general.js
