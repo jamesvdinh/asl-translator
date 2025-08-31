@@ -8,7 +8,7 @@ const fpsControl = new FPS();
 
 // Load the model
 async function loadModel() {
-  return tf.loadGraphModel('model.json');
+  return tf.loadGraphModel('./model.json');
 }
 
 var tfmodel;
