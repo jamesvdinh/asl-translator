@@ -1,3 +1,5 @@
+// general.js
+
 const video3 = document.getElementsByClassName('input_video3')[0];
 const out3 = document.getElementsByClassName('output3')[0];
 const controlsElement3 = document.getElementsByClassName('control3')[0];
@@ -123,4 +125,3 @@ new ControlPanel(controlsElement3, {
       video3.classList.toggle('selfie', options.selfieMode);
       hands.setOptions(options);
     });
-    // general.js
